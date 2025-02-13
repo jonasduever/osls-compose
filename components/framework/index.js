@@ -190,7 +190,7 @@ class ServerlessFramework {
         stdoutResult = stdoutBuffer.toString();
       } catch (e) {
         throw new Error(
-          'Could not find the Serverless Framework CLI installation. Ensure Serverless Framework is installed before continuing.\nhttps://serverless.com/framework/docs/getting-started'
+          'Could not find the Serverless Framework CLI installation. Ensure Serverless Framework is installed before continuing.\nhttps://github.com/oss-serverless/serverless/blob/main/docs/getting-started.md'
         );
       }
       const matchResult = stdoutResult.match(/[Framework Core|osls version]: ([0-9]+\.[0-9]+\.[0-9]+)/);
@@ -208,7 +208,7 @@ class ServerlessFramework {
         }
       } else {
         throw new Error(
-          'Could not verify the Serverless Framework CLI installation. Ensure Serverless Framework is installed before continuing.\nhttps://serverless.com/framework/docs/getting-started'
+          'Could not verify the Serverless Framework CLI installation. Ensure Serverless Framework is installed before continuing.\nhttps://github.com/oss-serverless/serverless/blob/main/docs/getting-started.md'
         );
       }
     }
