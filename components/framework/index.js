@@ -10,7 +10,7 @@ const semver = require('semver');
 const { configSchema } = require('./configuration');
 const ServerlessError = require('../../src/serverless-error');
 
-const MINIMAL_FRAMEWORK_VERSION = '3.7.7';
+const MINIMAL_FRAMEWORK_VERSION = '3.46.0';
 
 const doesSatisfyRequiredFrameworkVersion = (version) =>
   semver.gte(version, MINIMAL_FRAMEWORK_VERSION);

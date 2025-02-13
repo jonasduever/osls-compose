@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Deploy and orchestrate multiple OSS Serverless Framework services in monorepositories.",
   "main": "src/index.js",
-  "repository": "serverless/compose",
+  "repository": "jonasduever/osls-compose",
   "bin": {
     "serverless-compose": "./bin/serverless-compose",
     "slsc": "./bin/serverless-compose"
