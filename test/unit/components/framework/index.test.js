@@ -364,7 +364,7 @@ describe('test/unit/components/framework/index.test.js', () => {
 
   it('reports detected unsupported framework version', async () => {
     const spawnExtStub = sinon.stub().resolves({
-      stdoutBuffer: Buffer.from('Framework Core: 2.1.0'),
+      stdoutBuffer: Buffer.from('osls version: 3.46.0'),
     });
 
     const FrameworkComponent = proxyquire('../../../../components/framework/index.js', {

@@ -193,7 +193,7 @@ class ServerlessFramework {
           'Could not find the Serverless Framework CLI installation. Ensure Serverless Framework is installed before continuing.\nhttps://serverless.com/framework/docs/getting-started'
         );
       }
-      const matchResult = stdoutResult.match(/Framework Core: ([0-9]+\.[0-9]+\.[0-9]+)/);
+      const matchResult = stdoutResult.match(/[Framework Core|osls version]: ([0-9]+\.[0-9]+\.[0-9]+)/);
       if (matchResult) {
         const version = matchResult[1];
         if (doesSatisfyRequiredFrameworkVersion(version)) {
